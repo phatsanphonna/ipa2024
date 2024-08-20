@@ -1,0 +1,13 @@
+---
+- name: Install Apache on Ubuntu (concise)
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install apache2 and libapache2-mod-php
+      apt:
+        name:
+          - apache2
+          - libapache2-mod-php
+        state: latest
+        update_cache: yes
