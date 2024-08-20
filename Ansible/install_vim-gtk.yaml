@@ -1,0 +1,10 @@
+---
+- name: Install Vim
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install vim-gtk2
+      apt:
+        name: vim-gtk
+        state: present
