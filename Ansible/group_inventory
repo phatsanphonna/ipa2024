@@ -1,0 +1,7 @@
+[ubuntu_servers]
+172.31.109.10
+172.31.109.11
+172.31.109.12
+
+[centos_servers]
+172.31.109.20 ansible_user=cloud-user
